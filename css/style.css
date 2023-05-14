@@ -1,0 +1,63 @@
+/* Parent and Child Selector */
+div.deepu_row1 {
+    margin: 2px;
+    height: 200px;
+    border: 2px dashed red;
+}
+
+div.deepu_row1>div {
+    height: 100%;
+    border: 2px dashed #000;
+}
+
+/* Class Selector */
+.deepu_row2 {
+    margin: 2px;
+    height: 150px;
+    border: 2px dashed blue;
+}
+
+.deepu_row2>div {
+    height: 100%;
+    border: 2px dashed orange;
+}
+
+.deepu_row3 {
+    margin: 2px;
+    height: 150px;
+    border: 2px dashed blue;
+}
+
+/* First Child Selector */
+.deepu_row3>div:first-child {
+    height: 100%;
+    background-color: purple;
+    color: #fff;
+}
+
+/* Nth Child Selector where n can be anyone element no which we cannot access using first and last child selector */
+/* which can be define element:nth-child(no) {} */
+.deepu_row3>div:nth-child(2) {
+    height: 100%;
+    background-color: blue;
+    color: #fff;
+}
+
+.deepu_row3>div:nth-child(3) {
+    height: 100%;
+    background-color: orange;
+    color: #fff;
+}
+
+.deepu_row3>div:nth-child(4) {
+    height: 100%;
+    background-color: green;
+    color: #fff;
+}
+
+/* Last Child Selector */
+.deepu_row3>div:last-child {
+    height: 100%;
+    background-color: brown;
+    color: #fff;
+}
